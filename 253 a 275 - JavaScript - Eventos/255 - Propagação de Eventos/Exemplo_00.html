@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1" onclick="clicar()">Botão 1</button>
+    <button id="btn2">Botão 2</button>
+    <button id="btn3" onclick="alert('onclick no atributo')">Botão 3</button>
+    <div>
+        <h1>Propagação de Eventos</h1>
+        <div id="d1" style="background: red; padding: 25px;">
+            Texto dentro da div
+            <span style="background: yellow; padding: 5px;">Texto dentro da span</span>
+        </div>
+    </div>
+    <script>
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        btn2.onclick = clicar; // Se colocado o parênteses ele execulta primeiro a função e o valor do btn2 se torna undefined
+        function clicar() {
+            alert("Clicou");
+
+            return function() {
+                alert("Clicou 2");
+            }
+        }
+        btn3.addEventListener("click", function() {
+            alert("Clicou com o DOM Lv 2");
+        });
+        btn3.addEventListener("click", function() {
+            alert("Clicou com o DOM Lv 2 com outro evento");
+        });
+        btn3.onclick = function() {
+            alert("Olá");
+        ;}
+        btn3.onclick = function(){
+            alert("Mundo");
+        };
+        var $d1 = document.querySelector("#d1");
+        var $d1Span = document.querySelector("#d1 span")
+
+        $d1.addEventListener("click", function() {
+            console.log("Click no d1");
+        }, true);
+        $d1Span.addEventListener("click", function() {
+            console.log("Click no d1Span");
+        }, true);
+        document.addEventListener("click", function() {
+            console.log("Clicou no document");
+        }, true);
+    </script>
+</body>
+</html>

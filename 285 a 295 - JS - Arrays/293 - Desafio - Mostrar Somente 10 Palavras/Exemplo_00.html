@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione deserunt ducimus atque unde, ex odit amet quasi, quaerat eveniet fuga porro possimus perferendis assumenda. Optio quae dolore id non corrupti.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione deserunt ducimus atque unde, ex odit amet quasi, quaerat eveniet fuga porro possimus perferendis assumenda. Optio quae dolore id non corrupti.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione deserunt ducimus atque unde, ex odit amet quasi, quaerat eveniet fuga porro possimus perferendis assumenda. Optio quae dolore id non corrupti.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione deserunt ducimus atque unde, ex odit amet quasi, quaerat eveniet fuga porro possimus perferendis assumenda. Optio quae dolore id non corrupti.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione deserunt ducimus atque unde, ex odit amet quasi, quaerat eveniet fuga porro possimus perferendis assumenda. Optio quae dolore id non corrupti.</p>
+    <script>
+        var $paragrafo = document.querySelectorAll("p");
+        var x = 0;
+        while($paragrafo[x]) {
+            var dezStrings = $paragrafo[x].innerText.split(" ");
+            $paragrafo[x].textContent = dezStrings.slice(0, 9).join(" ") + "...";
+            x++;
+        }
+    </script>
+</body>
+</html>

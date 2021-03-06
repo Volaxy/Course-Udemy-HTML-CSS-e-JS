@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="msg"></div>
+    <script>
+        (function () {    
+            var msg = prompt("Digite seu nome");
+            document.getElementById("msg").textContent = "Bem vindo " + msg; // A propriedade textContent sempre é texto puro
+        }) ();
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+body {
+    font-family: cursive;
+    margin: 0;
+    background-color: #ddd;
+}
+
+.cabecalho {
+    background-image: url("../imagens/bg-2.jpg");
+    background-size: 100%;
+    background-position: bottom;
+    height: 500px;
+    border-top: 1px solid transparent;
+}
+
+.menu {
+    list-style: none;
+    text-align: right;
+    margin: 30px;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+}
+
+.cabecalho__titulo {
+    text-align: center;
+    margin-top: 130px;
+}
+
+.cabecalho__titulo h1 {
+    text-shadow: 1px 1px 3px white;
+}
+
+.cabecalho__titulo p {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    padding: 20px;
+    border-bottom: 1px solid white;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+section, article {
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+section {
+    overflow: auto;
+}
+
+.section__cards {
+    float: left;
+    width: 32%;
+}
+
+.section__cards p {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.card1, .card2 {
+    margin-right: 2%;
+}
+
+.section__cards img {
+    width: 100%;
+    display: block;
+}
+
+article h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    margin-top: 0;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

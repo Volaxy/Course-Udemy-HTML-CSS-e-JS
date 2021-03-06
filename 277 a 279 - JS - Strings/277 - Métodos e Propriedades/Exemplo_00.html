@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        var $div = document.getElementById("output");
+        var nomeCompleto = prompt("Digite o seu nome completo");
+        var ultimoNome = nomeCompleto.slice((nomeCompleto.lastIndexOf(" ") + 1), nomeCompleto.length);
+        $div.innerHTML += ultimoNome + ",";
+        
+        var nome = nomeCompleto.split(" ");
+        var x = 0;
+        while(nome[x] != nome[nome.length - 1]){
+            $div.innerHTML += " " + nome[x];
+            x++;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 32px;
+        }
+
+        body {
+            font-family: cursive;
+            font-size: 16px;
+        }
+
+        div {
+            border: 1px solid black;
+            padding: 1em;
+            /* width: 320px; */
+            width: 20em;
+            /* 320px / 16px do font-size */
+            margin: auto;
+            font-size: 16px;
+        }
+
+        p {
+            margin: 0;
+            line-height: 1.5;
+            font-size: 1.25em;
+            /* 16px x 1.25 = 20  ------------------------------------------------>  ¬ */
+        }                                                                         /* | */
+                                                                                  /* | */
+        a {                                                                       /* | */
+            font-size: 32px;                                                      /* | */
+            /* CALCULO ERRADO 32px / 16px  |||||  CALCULO CERTO 32px / 20px */    /*<- */
+            font-size: 1.6em;
+            font-size: 1rem;
+            /* 1rem = font-size da tag html */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi totam provident exercitationem ratione non dicta magni libero, illo <a href="#">tempore</a> quis voluptas id explicabo voluptatum nisi mollitia architecto. Assumenda, ipsa quibusdam.</p>
+    </div>
+
+</body>
+</html>

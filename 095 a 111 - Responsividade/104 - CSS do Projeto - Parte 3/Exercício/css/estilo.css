@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* Formatações Gerais */
+html {
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oxygen", arial;
+}
+
+.botao {
+    display: inline-block;
+    padding: 1em 1.75em;
+    background-color: aqua;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.botao:hover {
+    background-color: turquoise;
+}
+
+/* FORMATAÇÃO MOBILE FIRST */
+
+/* MOBILE */
+/* Cabeçalho */
+
+.header {
+    text-align: center;
+}
+
+.header__logo {
+    margin: 1em;
+}
+
+/* Menu de Navegação */
+.header__nav {
+    background-color: #612674;
+    text-align: center;
+}
+
+.header__nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header__nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+.header__nav a:hover {
+    background-color: #83379c;
+}
+
+/* Conteúdo do main 1 */
+
+.main1 {
+    text-align: center;
+    padding: 1em;
+    background-color: #f6f6f6;
+}
+
+.main1__title {
+    color: #612674;
+    font-size: 1.5em;
+    margin: 1.5em;
+}
+
+.main1__subtitle {
+    color: #a87bb7;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Conteúdo do main 2 */
+
+.main2 {
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 3em;
+}
+
+.main2__cards__title {
+    font-size: 1.5em;
+    color: #652e79;
+    text-transform: uppercase;
+}
+
+.main2__cards__p {
+    line-height: 1.5;
+    color: #222;
+}
+
+.main2__cards [class^="icon"] {
+    font-size: 3.5em;
+    color: #612674;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .destaque {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nostrum illo tenetur. Sit, obcaecati ab consequatur, corrupti deserunt consectetur itaque fugiat animi asperiores dolores, adipisci quisquam totam? Dolorum, quas fugit.</p>
+    <p>Lorem ipsum dolor sit amet, javascript adipisicing elit. Nisi nostrum illo tenetur. Sit, obcaecati ab consequatur, corrupti deserunt consectetur itaque fugiat animi asperiores dolores, adipisci quisquam totam? Dolorum, quas fugit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nostrum illo tenetur. Sit, obcaecati ab consequatur, corrupti deserunt consectetur itaque fugiat animi asperiores dolores, adipisci quisquam totam? Dolorum, quas fugit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nostrum illo tenetur. Sit, obcaecati ab consequatur, corrupti deserunt consectetur itaque fugiat animi asperiores dolores, adipisci quisquam totam? Dolorum, quas fugit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nostrum illo tenetur. Sit, obcaecati ab consequatur, corrupti deserunt consectetur itaque fugiat animi asperiores dolores, adipisci quisquam totam? Dolorum, javascript fugit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nostrum illo tenetur. Sit, obcaecati ab consequatur, corrupti deserunt consectetur itaque fugiat animi asperiores dolores, adipisci quisquam totam? Dolorum, quas fugit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nostrum illo javascript. Sit, obcaecati ab consequatur, corrupti deserunt consectetur itaque fugiat animi asperiores dolores, adipisci quisquam totam? Dolorum, quas fugit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nostrum illo javascript. Sit, javascript ab consequatur, corrupti deserunt consectetur itaque fugiat animi asperiores dolores, adipisci quisquam totam? Dolorum, quas fugit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nostrum illo tenetur. Sit, obcaecati ab consequatur, corrupti deserunt consectetur itaque fugiat animi asperiores dolores, adipisci javascript totam? Dolorum, quas fugit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nostrum illo tenetur. Sit, obcaecati ab consequatur, corrupti deserunt consectetur itaque fugiat animi asperiores dolores, adipisci quisquam totam? Dolorum, quas fugit.</p>
+    <script>
+        var $paragrafo = document.querySelectorAll("p");
+        var x = 0;
+        while($paragrafo[x]) {
+            var posicao = $paragrafo[x].textContent.indexOf("javascript");
+            if(posicao >= 0) {
+                $paragrafo[x].className = "destaque";
+                console.log(posicao);
+            }
+            x++;
+        }
+    </script>
+</body>
+</html>

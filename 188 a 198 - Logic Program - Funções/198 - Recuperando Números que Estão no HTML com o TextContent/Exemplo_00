@@ -1,0 +1,13 @@
+No exemplo do vídeo, recuperei o número que estava na div utilizando a propriedade textContent. Uma observação importante aqui é que toda a informação que vem da interface do usuário (quando usamos javascript no browser) é do tipo texto, ou melhos, string.
+
+Como vamos fazer um calculo matemático, uma boa prática é convertermos esse texto para número:
+
+var n1 = document.querySelector('#output').textContent;
+
+n1 = parseFloat(n1); 
+
+No exemplo do vídeo tudo funcionou mesmo sem essa conversão pois coincidentemente eu não fiz adição (que no caso de string, iria concatenar textos).
+
+Lembre-se sempre de converter textos em números antes de efetuar operações matemáticas para evitar ter surpresas desagradáveis.
+
+Agradeço ao aluno Andre Figueiredo pela observação

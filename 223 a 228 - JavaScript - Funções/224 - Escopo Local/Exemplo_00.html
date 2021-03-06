@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var x = 0;
+        var y;
+
+        function mostraX() {
+            var x = 10; //Escopo local
+            var y = 20;
+            console.log("mostra X dentro: ", x);
+            console.log("mostra Y dentro: ", y);
+        }
+        
+        mostraX();
+        console.log("mostra X fora: ", x);
+        console.log("mostra Y fora: ", y);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

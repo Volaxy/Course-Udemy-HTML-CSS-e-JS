@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1, 2, 3, 4, 5];
+        var soNumeros = arr.every(function(elemento, indice, objeto) {
+            // console.log("Elemento: " + elemento);
+            // console.log("Indice: " + indice);
+            // console.log("Objeto: " + objeto);
+            // console.log("==================");
+            return typeof el === "number";
+        });
+        console.log(soNumeros);
+        // 
+        var aoMenosUmNumero = arr.some( function(elemento) {
+            return typeof elemento === "number";
+        });
+        console.log(aoMenosUmNumero);
+        // 
+        var numeros = arr.filter( function(elemento, indice, objeto) {
+            return typeof elemento === "number";
+
+        });
+        console.log(numeros);
+        // 
+        arr.forEach(function(elemento, indice, objeto) {
+            console.log("Elemento: ", elemento, " || Indice: ", indice, " || Objeto: ", arr.toString());
+        });
+        // 
+        var posicaoStr1 = arr.indexOf(5);
+        console.log(posicaoStr1);
+        var posicaoStr2 = arr.lastIndexOf(3);
+        console.log(posicaoStr2);
+        // 
+        console.log(numeros);
+        numeros = numeros.map(function(elemento, indice, objeto) {
+            return elemento * indice;
+        })
+        console.log(numeros);
+        // 
+        var arr2 = arr.concat(numeros, "oi", "td bem?");
+        console.log(arr2);
+        // 
+        var str = arr2.join(" - ");
+        console.log(str);
+        // 
+        
+        </script>
+</body>
+</html>

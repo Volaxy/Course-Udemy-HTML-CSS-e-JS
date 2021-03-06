@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        (function () {
+            var soma = 0;
+
+            function somar() {
+                soma += numeros[i];
+            }
+
+            var numeros = new Array();
+            var vezes = parseInt(prompt("Digite a quantidade de números que você quer tirar a média"));
+            
+            for(i = 0; i < vezes; i++) {
+                numeros.push(parseInt(prompt("Digite o " + (i + 1) + "º número de " + vezes)));
+                somar();
+            }
+
+            var media = soma / numeros.length;
+            alert("A média dos números que você digitou foi " + media);
+        })();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

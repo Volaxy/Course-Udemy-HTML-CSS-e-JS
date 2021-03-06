@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="GET" class="form__login">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label>Email</label>
+            <input type="email">
+            <br>
+            <label>Número de filhos</label>
+            <input type="number" min="0" max="50">
+            <br>
+            <label>Nascimento</label>
+            <input type="date" min="2020-01-01" max="2120-01-01">
+            <br>
+            <label>
+                Masculino
+                <input type="radio" name="sexo" value="m">
+            </label>
+            <label>
+                Feminino
+                <input type="radio" name="sexo" value="f">
+            </label>
+            <br>
+            <input type="submit" value="mandar">
+        </fieldset>
+    </form>
+</body>
+</html>

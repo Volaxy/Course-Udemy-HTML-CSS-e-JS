@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: cyan;
+            font-size: 16px;
+        }
+
+        .teste {
+            background-color: darkorchid;
+            width: 320px;
+            height: 50px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 15px;
+        }
+
+        .container div {
+            background-color: #ccc;
+            margin-bottom: 15px;
+            height: 150px;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        @media (max-width: 400px) {
+            body {
+                background-color: darkorange;
+            }
+
+            .container div {
+                width: 48%;
+                float: left;
+                margin: 1%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Paragrafo qualquer</p>
+    <!-- <div class="teste"></div> -->
+    <div class="container clearfix">
+        <div>div 1</div>
+        <div>div 2</div>
+    </div>
+</body>
+</html>

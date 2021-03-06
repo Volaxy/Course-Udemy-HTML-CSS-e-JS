@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        span {
+            width: 40px;
+            height: 20px;
+            background-color: #bbb;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        input[type="checkbox"] {
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            opacity: 0;
+        }
+
+        label input[type="checkbox"] + span::before {
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            margin-top: 3px;
+            margin-left: 3px;
+            background-color: #eee;
+        }
+
+        label input[type="checkbox"]:checked + span::before {
+            transform: translateX(20px);
+            background-color: green;
+            transition: all 0.1s ease-out;
+        }
+
+        label input[type="checkbox"]:not(:checked) + span::before {
+            transition: all 0.1s ease-out;
+            background-color: maroon;
+        }
+    </style>
+</head>
+<body>
+    <label>
+        <input type="checkbox">
+        <span></span>
+        Esporte
+    </label>
+    <label>
+        <input type="checkbox">
+        <span></span>
+        Política
+    </label>
+    <label>
+        <input type="checkbox">
+        <span></span>
+        Educação
+    </label>
+</body>
+</html>

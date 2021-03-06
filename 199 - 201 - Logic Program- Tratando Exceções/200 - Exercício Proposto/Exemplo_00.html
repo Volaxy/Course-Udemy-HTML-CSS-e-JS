@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="botao()">Calcular Área</button>
+    <div id="output"></div>
+    <script>
+        var output = document.querySelector("#output");
+        var area = dados();
+        output.innerHTML = area;
+
+        function dados() {
+            var l = prompt("Digite a largura do Retângulo");
+            l = parseFloat(l);
+            var c = prompt("Digite o comprimento do Retângulo");
+            c = parseFloat(c);
+            if(isNaN(c) || isNaN(l)) {
+                throw new Error("Somente números são válidos");
+                return 0;
+            }
+            return l * c;
+        }
+
+        function botao() {
+            var total = dados();
+            output.innerHTML = total;
+        }
+    </script>
+</body>
+</html>

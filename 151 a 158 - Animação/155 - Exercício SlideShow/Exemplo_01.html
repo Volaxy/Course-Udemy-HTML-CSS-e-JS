@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes slide {
+            0% {
+                transform: translateY(0);
+            }
+
+            22%, 25% {
+                transform: translateY(-50vh);
+            }
+
+            47%, 50% {
+                transform: translateY(-100vh);
+            }
+
+            72%, 100% {
+                transform: translateY(-150vh);
+            }
+        }
+
+        body {
+            background-color: #1a1818;
+            margin: 0;
+        }
+
+        #externo {
+            width: 80vw;
+            height: 50vh;
+            border: 10px solid white;
+            box-shadow: 0 0 10px black;
+            margin-left: 10vw;
+            margin-top: 20vh;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        #interno {
+            width: 100%;
+            animation: slide 5s 1s infinite;
+        }
+
+        #interno img {
+            display: block;
+            height: 50vh;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="externo">
+        <div id="interno">
+            <img src="slide1.jpg" alt="">
+            <img src="slide2.jpg" alt="">
+            <img src="slide3.jpg" alt="">
+            <img src="slide4.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

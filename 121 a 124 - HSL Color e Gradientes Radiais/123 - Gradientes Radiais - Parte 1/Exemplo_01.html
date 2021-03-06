@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #grupo__cores {
+            padding: 15px;
+            background-image: url("tile.png");
+            counter-reset: contador;
+        }
+
+        #cores {
+            width: 80%;
+            height: 180px;
+            border: 10px solid rgba(0, 0, 0, 0.5);
+            margin: 20px auto;
+            padding: 15px;
+            counter-increment: contador;
+        }
+
+        #cores::before {
+            content: "["counter(contador)"]";
+        }
+
+        #cores:nth-child(2) {
+            background-color: springgreen;
+        }
+
+        #cores:nth-child(3) {
+            background-color: springgreen;
+            background-clip: padding-box;
+        }
+
+        #cores:nth-child(4) {
+            background-color: rgb( 50%, 80%, 30%);
+        }
+
+        #cores:nth-child(5) {
+            background-color: hsl(220deg, 50%, 30%);
+        }
+        
+        #cores:nth-child(6) {
+            background-color: hsla(150deg, 70%, 30%, 0.7);
+        }
+        
+        #cores:nth-child(7) {
+            background-image: linear-gradient(blue, transparent), linear-gradient(to right, red, purple);
+            background-clip: content-box, border-box;
+        }
+        
+        #cores:nth-child(8) {
+            background-image: linear-gradient(blue, transparent), linear-gradient(to right, red, purple);
+        }
+        
+        #cores:nth-child(9) {
+            background-image: radial-gradient(#b700cf, blue);
+        }
+        
+        #cores:nth-child(10) {
+            background-image: radial-gradient(circle, #b700cf, blue);
+        }
+        
+        #cores:nth-child(11) {
+            background-image: radial-gradient(#b700cf, blue, pink, green);
+        }
+        
+        #cores:nth-child(12) {
+            background-image: radial-gradient(#b700cf 50%, blue, pink, green 60%);
+        }
+        
+        #cores:nth-child(13) {
+            background-image: radial-gradient(closest-side, #b700cf, blue, pink, green);
+        }
+        
+        #cores:nth-child(14) {
+            background-image: radial-gradient(farthest-side, #b700cf, blue, pink, green);
+        }
+        
+        #cores:nth-child(15) {
+            background-image: radial-gradient(closest-side at 25% 25%, #b700cf, blue, pink, green);
+        }
+        
+        #cores:nth-child(16) {
+            background-image: radial-gradient(farthest-side at 25% 25%, #b700cf, blue, pink, green);
+        }
+        
+        #cores:nth-child(17) {
+            background-image: radial-gradient(closest-corner at 25% 25%, #b700cf, blue, pink, green);   
+        }
+        
+        #cores:nth-child(18) {
+            background-image: radial-gradient(farthest-corner at 25% 25%, #b700cf, blue, pink, green);
+        }
+        
+        #cores:nth-child(19) {
+            background-image: repeating-linear-gradient(pink, orange 50%);
+        }
+        
+        #cores:nth-child(20) {
+            background-image: repeating-radial-gradient(#00ccff, rgba(196, 54, 196, 0.6) 50%);
+        }
+        
+        #cores:nth-child(21) {
+            background-image: repeating-radial-gradient(#00ffdd, #44f32dd8 50%);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div id="grupo__cores">
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+        <div id="cores">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laborum dolores provident impedit deleniti quo dolore est placeat, dolorum saepe repellendus, earum soluta pariatur? Eveniet autem itaque repudiandae accusamus omnis?</p>
+        </div>
+    </div>
+</body>
+</html>

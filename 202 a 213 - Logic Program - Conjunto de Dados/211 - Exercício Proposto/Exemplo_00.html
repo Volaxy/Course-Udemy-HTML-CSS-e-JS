@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        var emails = [{"nome": "Paulo", "email": "paulinho@hotmail.com"}, {"nome": "Sergio", "email": "cegao@gmail.com"}, {"nome": "Roberto", "email": "robin@hotmail.com"}];
+        var msg = "";
+        for(var i = 0; i < emails.length; i++) {
+            msg += "<h2>Nome: " + emails[i].nome + "</h2>";
+            msg += "Email: " + emails[i].email;
+        }
+        document.querySelector("#output").innerHTML = msg;
+    </script>
+</body>
+</html>

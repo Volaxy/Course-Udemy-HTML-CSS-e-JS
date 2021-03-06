@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #ccc;
+            font-family: cursive;
+        }
+
+        .form__login {
+            background-color: floralwhite;
+            margin: 150px auto;
+            width: 25%;
+        }
+
+        fieldset {
+            border: 0;
+        }
+
+        .form__login h1 {
+            text-align: center;
+            font-size: 20px;
+            padding-bottom: 3px;
+            border-bottom: 1px solid cyan;
+        }
+
+        #login, #senha, #btn {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+
+        #login, #senha {
+            display: block;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        #login:focus, #senha:focus {
+            display: block;
+            background-color: #ddd;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="GET" class="form__login">
+        <fieldset>
+            <h1>Login</h1>
+            <label for="login">Faça seu login</label>
+            <input type="text" name="login" id="login" autofocus>
+            <label for="senha">Faça sua senha</label>
+            <input type="password" name="senha" id="senha">
+            <input type="submit" value="Enviar" id="btn">
+        </fieldse>
+    </form>
+</body>
+</html>

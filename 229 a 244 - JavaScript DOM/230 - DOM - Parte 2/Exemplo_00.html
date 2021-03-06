@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Curso Javascript Completo 2018</title>
+        <meta charset="utf-8">
+    </head>
+    <script>
+        document.getElementById("idmain");
+        document.getElementById("pmain").textContent = "texto alterado";
+        document.getElementsByClassName("paragrafos");
+        document.getElementsByClassName("paragrafos").textContent = "texto alterado"; //Forma errada
+        document.getElementsByClassName("paragrafos")[0].textContent = "texto alterado"; // Forma certa
+        document.getElementsByClassName("pmain")[0].textContent = "texto alterado";
+    </script>  
+    <body>
+        <h1>Curso Javascript Completo 2018</h1>    
+        <main class="cmain" id="idmain">
+            <h2>subtitulo</h2>
+            <p id="pmain" class="pmain">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </main>        
+        <section class="csection" id="idsection">
+            <h3>subtitulo</h3>
+            <p class="paragrafos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            <p class="paragrafos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </section>        
+    </body>
+</html>

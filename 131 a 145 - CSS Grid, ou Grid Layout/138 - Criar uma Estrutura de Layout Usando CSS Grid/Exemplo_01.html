@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            background-color: goldenrod;
+            grid-template-rows: 100px 50px 200px 100px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        header, nav, main, aside, footer {
+            background-color: darkorchid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
+
+        nav {
+            grid-column-start: 1;
+            grid-column-end: span 2;
+        }
+
+        main {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        aside {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>HEADER</header>
+        <nav>NAV</nav>
+        <main>MAIN</main>
+        <aside>ASIDE</aside>
+        <footer>FOOTER</footer>
+    </div>
+</body>
+</html>

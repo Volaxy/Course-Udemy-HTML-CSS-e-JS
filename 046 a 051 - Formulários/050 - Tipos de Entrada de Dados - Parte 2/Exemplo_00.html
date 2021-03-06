@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="GET" class="form__login">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label>Email</label>
+            <input type="email">
+            <br>
+            <label>Número de filhos</label>
+            <input type="number" min="0" max="50">
+            <br>
+            <label>Nascimento</label>
+            <input type="date" min="2020-01-01" max="2120-01-01">
+            <br>
+            <label>
+                Masculino
+                <input type="radio" name="sexo" value="m">
+            </label>
+            <label>
+                Feminino
+                <input type="radio" name="sexo" value="f">
+            </label>
+            <br>
+            <input type="submit" value="mandar">
+        </fieldset>
+        <fieldset>
+            <legend>Área de interesse</legend>
+            <label>
+                <input type="checkbox">
+                HTML
+            </label>
+            <label>
+                <input type="checkbox">
+                CSS
+            </label>
+            <label>
+                <input type="checkbox">
+                JavaScript
+            </label>
+            <br>
+            <select>
+                <option value="0">Selecione um estado...</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="sp">São Paulo</option>
+                <option value="es">Espírito Santo</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea style="resize: none" name="msg" cols="30" role="10"></textarea>
+            <textarea style="resize: none" name="contrato" cols="30" role="10" readonly>Aqui entra o texto que precisa ser aceito</textarea>
+            <label>
+                <input type="checkbox">
+                Li e aceito
+            </label>
+
+            <input type="range" min="0" max="10" step="2">
+            <input type="time">
+            <input type="color">
+        </fieldset>
+        <input type="submit" value="mandar">
+        <input type="button" value="button">
+        <input type="reset" value="reset">
+    </form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="mostrarAreaAlert()">mostrar área no alert</button>
+    <button onclick="mostrarAreaOutput()">mostrar área no output</button>
+    <div id="output"></div>
+    <script>
+        function mostrarAreaAlert() {
+            var largura = prompt("Digite a largura");
+            largura = parseFloat(largura);
+            var altura = prompt("Digite a altura");
+            altura = parseFloat(altura);
+            try{
+                var area = calcularArea(largura, altura);
+            }catch(e){
+                document.querySelector("#output").innerHTML = "a área total é: " + e;
+            }
+            alert("a área total é: " + area);
+        }
+
+        function mostrarAreaOutput() {
+            var largura = prompt("Digite a largura");
+            largura = parseFloat(largura);
+            var altura = prompt("Digite a altura");
+            altura = parseFloat(altura);
+            try{
+                var area = calcularArea(largura, altura);
+            }catch(e){
+                document.querySelector("#output").innerHTML = "a área total é: " + e;
+            }
+            document.querySelector("#output").innerHTML = "a área total é: " + area;
+        }
+
+        function calcularArea(l, a) {
+            if(l === undefined || a === undefined) {
+                throw new Error("calcularArea precisa receber 2 números");
+            }
+
+            if(isNaN(l) || isNaN(a)) {
+                throw new Error("Apenas números");
+            }
+
+            return l * a;
+        }
+
+        mostrarAreaAlert();
+    </script>
+</body>
+</html>

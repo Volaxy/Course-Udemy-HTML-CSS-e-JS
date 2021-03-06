@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea name="txt" id="texto" cols="50" rows="10" maxlength="150"></textarea>
+    <div style="display: none;" id="restaContainer">Restam <span id="resta"></span> caracteres.</div>
+    <script>
+        (function() {
+            'use strict';
+            var $restaContainer = document.getElementById("restaContainer");
+
+            var $mensagem = document.getElementById("texto");
+            var $resta = document.getElementById("resta");
+            var maxima = $mensagem.maxLength;
+
+            function mostraContainer() {
+                $restaContainer.style.display = "block";
+            }
+
+            mostraContainer();
+            mostrarCaracteres(maxima);
+            $mensagem.addEventListener("input", checklenght);
+            
+            function checklenght(e) {
+                var letrasDigitadas = this.value.length;
+                var caracteresRestantes = parseInt(maxima) - parseInt(letrasDigitadas);
+                mostrarCaracteres(caracteresRestantes);
+            };
+
+            function mostrarCaracteres(n) {
+                $resta.textContent = n;
+            };
+        })();
+    </script>
+</body>
+</html>

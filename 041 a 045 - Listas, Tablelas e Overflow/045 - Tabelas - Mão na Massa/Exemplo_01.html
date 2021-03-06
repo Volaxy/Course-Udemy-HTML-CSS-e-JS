@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: cursive;
+        }
+
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th {
+            border: 1px solid #333;
+        }
+
+        thead {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Lista de vendas</caption>
+        <thead>
+            <tr>
+                <th>Frutas</th>
+                <th>Compras</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3">Maçã</th>
+                <th>4</th>
+                <th>$ 4,00</th>
+            </tr>
+            <tr>
+                <th>8</th>
+                <th rowspan="2">$ 6,00</th>
+            </tr>
+            <tr>
+                <th>17</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Abacaxi</th>
+                <th>3</th>
+                <th>$ 9,00</th>
+            </tr>
+            <tr>
+                <th>7</th>
+                <th>$ 7,00</th>
+            </tr>
+            <tr>
+                <th>Manga</th>
+                <th>14</th>
+                <th>$ 4,00</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>3 Tipos de frutas</th>
+                <th>53</th>
+                <th>$ 36,00</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,280 @@
+@charset "utf-8";
+/* Formatações Gerais */
+html {
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oxygen", arial;
+}
+
+.botao {
+    display: inline-block;
+    padding: 1em 1.75em;
+    background-color: aqua;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.botao:hover {
+    background-color: turquoise;
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+/* FORMATAÇÃO MOBILE FIRST */
+
+/* MOBILE */
+/* Cabeçalho */
+
+.header {
+    text-align: center;
+}
+
+.header__logo {
+    margin: 1em;
+}
+
+/* Menu de Navegação */
+.header__nav {
+    background-color: #612674;
+    text-align: center;
+}
+
+.header__nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header__nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+.header__nav a:hover {
+    background-color: #83379c;
+}
+
+/* Conteúdo do main 1 - Introdução */
+
+.icon__play {
+    height: 5em;
+    display: none;
+}
+
+.icon__play img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.main1 {
+    text-align: center;
+    padding: 1em;
+    background-color: #f6f6f6;
+}
+
+.main1__title {
+    color: #612674;
+    font-size: 1.5em;
+    margin: 1.5em;
+}
+
+.main1__subtitle {
+    color: #a87bb7;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Conteúdo do main 2 - Ícones */
+
+.main2 {
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 3em;
+}
+
+.main2__cards__title {
+    font-size: 1.5em;
+    color: #652e79;
+    text-transform: uppercase;
+}
+
+.main2__cards__p {
+    line-height: 1.5;
+    color: #222;
+}
+
+.main2__cards [class^="icon"] {
+    font-size: 3.5em;
+    color: #612674;
+}
+
+/* Conteúdo da main 3 - Textos */
+
+.main3 {
+    padding: 2em;
+}
+
+.main3__text {
+    margin-bottom: 4em;
+}
+
+.main3__text__title {
+    color: #652e79;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.main3__text__p {
+    text-align: justify;
+}
+
+/* Rodapé */
+
+.footer {
+    text-align: center;
+    background-color: #303d4c;
+    color: #83969f;
+}
+
+.footer__lista {
+    padding: 1em;
+    background-color: #25303e;
+}
+
+.footer__lista li {
+    display: inline-block;
+    list-style: none;
+    margin: auto 1.25em;
+}
+
+.footer__lista a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer__title {
+    margin-bottom: 0;
+}
+
+.footer__p {
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+/* TABLET, ETC... */
+
+@media (min-width: 48.75em) /* 780px / 16px */ {
+    /* Cabeçalho */
+
+    .header__logo {
+        float: left;
+    }
+
+    .header__nav {
+        background-color: transparent;
+        float: right;
+        margin-top: 45px;
+    }
+
+    .header__nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header__nav li {
+        display: inline-block;
+    }
+
+    .header__nav a {
+        color: #713a84;
+        font-weight: bold;
+    }
+
+    .header__nav a:hover {
+        background-color: #e7e9fc;
+        border-radius: 5px;
+    }
+
+    /* Conteúdo do main 1 - Introdução */
+
+    .icon__play {
+        display: block;
+    }
+
+    .main1 {
+        background-color: #521a66;
+        color: white;
+    }
+
+    .main1__title, .main1__subtitle {
+        color: white;
+    } 
+
+    /* Conteúdo da main 2 - Ícones */
+
+    .card {
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+
+    /* Conteúdo da main 3 - Textos */
+
+    .main3 .botao {
+        float: right;
+    }
+}
+
+/* TABLET ~ DESKTOP */
+
+@media (min-width: 62.5em) /* 1000px / 16px */ {
+    .main1 {
+        /* background-color: #521a66;
+        background-image: url("../images/bg_topo_1198x670.jpg"); */
+        background: url("../images/bg_topo_1198x670.jpg"), #521a66;
+        background-repeat: no-repeat;
+        height: 40em;
+        padding-top: 15em;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 74em) /* 1184px / 16px */ {
+    .main1 {
+        background-image: url("../images/bg_topo_1600x1374.jpg");
+        height: 50em;
+        padding: 30em 10em 10em;
+        background-position: center top;
+    }
+
+    .main2__cards {
+        width: 23%;
+        margin: 1%;
+    }
+
+    .main3__text {
+        width: 48%;
+        margin: 1%;
+        float: left;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <textarea cols="30" rows="10" readonly>Contrato de serviço</textarea>
+        <br>
+        <label for="checkbox">
+            <input type="checkbox" id="checkbox" checked>Li e aceito os termos do contrato.
+        </label>
+        <br>
+        <input type="submit" id="btn" value="Continuar">
+    </form>
+    <script>
+        (function() {
+            'use strict';
+            var $btn = document.getElementById("btn");
+            var $checkbox = document.getElementById("checkbox");
+
+            togglebtn();
+            $checkbox.addEventListener("change", function() {
+                // if(this.checked) {
+                //     $btn.disabled = false;
+                // }else{
+                //     $btn.disabled = true;
+                // }
+                togglebtn();
+            });
+
+            function togglebtn() {
+                $btn.disabled = !$checkbox.checked;
+            };
+        })();
+    </script>
+</body>
+</html>

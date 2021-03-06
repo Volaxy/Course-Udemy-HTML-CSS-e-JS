@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background-color: #ccc;
+    font-family: cursive, sans-serif;
+}
+
+.header {
+    background-image: url("../imagens/bg-4.jpg");
+    background-size: cover;
+    height: 500px;
+}
+
+.header__titulo {
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+}
+
+.header__titulo h1 {
+    text-shadow: 2px 2px 3px #555;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+.principal {
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.principal__article h2 {
+    background-color: #bbb;
+    padding: 5px;
+    margin-top: 0;
+    border-bottom: 3px solid #888;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px #555;
+    background-color: #999;
+    padding: 10px;
+    margin-top: 20px;
+}

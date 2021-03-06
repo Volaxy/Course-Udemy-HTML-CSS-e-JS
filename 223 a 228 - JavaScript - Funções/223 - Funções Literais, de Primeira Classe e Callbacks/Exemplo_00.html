@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Literal
+        function somar(n1, n2) {
+            //Corpo da Função
+            return n1 + n2;
+        }
+
+        var soma = somar(10, 20);
+        console.log("Resultado: ", soma);
+
+        somar.teste = "Propriedade da função";
+        console.log(somar.teste);
+
+        var teste = function abacaxi(f) {
+            f();
+        };
+
+        teste(function() {console.log("funcao passada por parametro")});
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <label for="login">
+            Usuário
+            <input type="text" id="login" name="user">
+        </label>
+        <label for="senha">
+            Senha
+            <input type="password" id="senha" name="password">
+        </label>
+        <button id="botao">Logar</button>
+    </form>
+    <script>
+        (function() {
+            'use strict';
+            var $login = document.querySelector("#login");
+            var $password = document.querySelector("#senha");
+            var $button = document.querySelector("#botao");
+
+            $button.addEventListener("click", function() {
+                if(!$login.value || !$password.value) {
+                    alert("Campo de Login ou senha vazio(s)");
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

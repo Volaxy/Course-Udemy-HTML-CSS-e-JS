@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="texto">
+    <button id="cadastro">Cadastrar tarefa</button>
+    <ul>
+        <li>estudar JavaScript</li>
+        <li>estudar eventos em JavaScript</li>
+        <li>Jogar no PC</li>
+    </ul>
+    <script>
+        (function() {
+            'use strict';
+            var $ul = document.querySelector("ul");
+            var $texto = document.querySelector("#texto");
+            var $botao = document.querySelector("#cadastro");
+
+            $botao.addEventListener("click", function() {
+                var tarefa = "<li>" + $texto.value + "</li>";
+                $ul.innerHTML += tarefa;
+                $texto.value = "";
+                $texto.focus();
+            });
+        })();
+    </script>
+</body>
+</html>

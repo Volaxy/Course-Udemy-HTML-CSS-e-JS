@@ -1,0 +1,139 @@
+/* Formatações Gerais */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #666;
+    margin: 0;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+hr {
+    color: #bebebe;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    color: #787878;
+    margin: 25px auto 50px 0;
+}
+
+code {
+    border: 2px solid #e7e7e7;
+    padding: 5px;
+    background-color: #efefef;
+}
+
+blockquote {
+    border-left: 5px solid #efefef;
+    margin: 2em 0;
+    padding: 0.5em 0.5em 0.5em 1.5em;
+}
+
+.linkverde {
+    color: inherit;
+    transition: all 0.4s;
+    border-bottom: 1px dotted #666;
+}
+
+.linkverde:hover {
+    color: #2b9252;
+    border-bottom-color: transparent;
+}
+
+/* Cabeçalho */
+.esquerda__header {
+    width: 35%;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background-image: url("../images/overlay.png"), url("../images/bg.jpg");
+    background-size: 100% 100%;
+    padding: 150px 75px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.esquerda__header__h1 {
+    color: #bbb;
+    font-size: 23px;
+    line-height: 1.5;
+}
+
+.esquerda__header__h1 strong {
+    color: white;
+}
+/* Conteúdo Principal */
+.direita__main {
+    width: 65%;
+    margin-left: 35%;
+    padding: 75px;
+    box-sizing: border-box;
+}
+
+.genericbtn {
+    display: inline-block;
+    padding: 0.50em 1.25em;
+    border: 2px solid #42ad6b;
+    background-color: #85dba6;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 1px #666;
+    margin: 25px auto 40px 0;
+}
+
+/* Lista */
+ul, ol {
+    padding: 0;
+    list-style-position: inside;
+}
+
+.col1 {
+    float: left;
+    width: 50%;
+}
+
+.col2 {
+    float: right;
+    width: 50%;
+}
+
+.listas {
+    overflow: auto;
+}
+
+/* Tabela */
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.tabela__cabecalho {
+    background-color: #eee;
+}
+
+.tabela__cabecalho td {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.tabela__corpo {
+    border: 1px solid #ccc;
+}
+
+.tabela__corpo tr:nth-child(even) {
+    background-color: #eee;
+}
+
+.tabela__footer {
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+}

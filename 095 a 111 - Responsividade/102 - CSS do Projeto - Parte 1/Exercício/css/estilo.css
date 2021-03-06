@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* Formatações Gerais */
+html {
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oxygen", arial;
+}
+
+/* FORMATAÇÃO MOBILE FIRST */
+
+/* MOBILE */
+/* Cabeçalho */
+
+.header {
+    text-align: center;
+}
+
+.header__logo {
+    margin: 1em;
+}
+
+/* Menu de Navegação */
+.header__nav {
+    background-color: #612674;
+    text-align: center;
+}
+
+.header__nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header__nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+.header__nav a:hover {
+    background-color: #83379c;
+}

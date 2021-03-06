@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea name="txt" id="texto" cols="50" rows="10"></textarea><br>
+    Restam <span id="resta"></span> caracteres.
+    <script>
+        (function() {
+            var maxima = 100;
+            var $mensagem = document.getElementById("texto");
+            var $resta = document.getElementById("resta");
+
+            $resta.textContent = maxima;
+            $mensagem.addEventListener("input", checklenght);
+            
+            function checklenght(e) {
+                var letrasDigitadas = this.value.length;
+                $resta.textContent = maxima - letrasDigitadas;
+            };
+        })();
+    </script>
+</body>
+</html>

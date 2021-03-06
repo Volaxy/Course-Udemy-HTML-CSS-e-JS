@@ -1,0 +1,52 @@
+/* Formatações Gerais */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #666;
+    margin: 0;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.linkverde {
+    color: #eee;
+    transition: all 0.4s;
+}
+
+.linkverde:hover {
+    color: #2b9252;
+    border-bottom: 1px dotted #2b9252;
+}
+
+/* Cabeçalho */
+.esquerda__header {
+    width: 35%;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background-image: url("../images/overlay.png"), url("../images/bg.jpg");
+    background-size: 100% 100%;
+    padding: 150px 75px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.esquerda__header__h1 {
+    color: #bbb;
+    font-size: 23px;
+    line-height: 1.5;
+}
+
+.esquerda__header__h1 strong {
+    color: white;
+}
+/* Conteúdo Principal */
+.direita__main {
+    width: 65%;
+    margin-left: 35%;
+    padding: 75px;
+    box-sizing: border-box;
+}

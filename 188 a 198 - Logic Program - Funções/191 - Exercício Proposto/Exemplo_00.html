@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="somar()">+</button>
+    <button onclick="diminuir()">-</button>
+    <button onclick="multiplicar()">*</button>
+    <button onclick="dividir()">/</button>
+    <div id="tela"></div>
+    <script>
+        var n1 = prompt("Digite um número");
+        n1 = parseFloat(n1);
+        var tela = document.querySelector("#tela");
+        tela.innerHTML = n1;
+
+        function somar() {
+            var n2 = prompt("Digite outro número");
+            var n2 = parseFloat(n2);
+            n1 = n1 + n2;
+            tela.innerHTML = n1;
+        }
+
+        function diminuir() {
+            var n2 = prompt("Digite outro número");
+            var n2 = parseFloat(n2);
+            n1 = n1 - n2;
+            tela.innerHTML = n1;
+        }
+        
+        function multiplicar() {
+            var n2 = prompt("Digite outro número");
+            var n2 = parseFloat(n2);
+            n1 = n1 * n2;
+            tela.innerHTML = n1;
+        }
+
+        function dividir() {
+            var n2 = prompt("Digite outro número");
+            var n2 = parseFloat(n2);
+            n1 = n1 / n2;
+            tela.innerHTML = n1;
+        }
+    </script>
+</body>
+</html>
